@@ -1,0 +1,9 @@
+---
+kind: pipeline
+type: docker
+name: Transcode-sros CI/CD
+steps:
+- name: Build transcode-sros
+  image: golang
+  commands:
+  - go build
